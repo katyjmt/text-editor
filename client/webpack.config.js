@@ -18,7 +18,11 @@ module.exports = () => {
     plugins: [
       new HtmlWebpackPlugin({
         template: './index.html',
-        title: 'J.A.T.E'
+        filename: 'index.html',
+        title: 'J.A.T.E',
+        templateParameters: {
+          logoImageSrc: './assets/icons/icon_96x96.png',
+        },
       }),
       new MiniCssExtractPlugin(),
       // Inject custom service worker
@@ -38,6 +42,7 @@ module.exports = () => {
           {
             src: path.resolve('src/images/logo.png'),
             sizes: [96, 128, 192, 256, 384, 512],
+            destination: 'assets/icons',
           },
         ],
       }),
