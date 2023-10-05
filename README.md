@@ -15,7 +15,7 @@ A simple text editor, allowing the user to take notes with Javascript syntax hig
 - [Questions](#questions)
 
 ## Link to Application
-- [Application Link](https://.....)
+- [Application Link](https://stormy-tundra-71993-6dbb8682ee7a.herokuapp.com/)
 
 ## Installation
  To install the text editor on your machine, simply open the link above, then click the 'Install!' button on the top-left corner of the page.
