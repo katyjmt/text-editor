@@ -32,10 +32,11 @@ module.exports = () => {
       }),
       // Create manijest.json file
       new WebpackPwaManifest({
-        name: 'J.A.T.E',
+        name: 'Just Another Text Editor',
         short_name: 'J.A.T.E',
-        description: 'A simple command-line tool',
-        background_color: 'black',
+        description: 'Takes notes with Javascript syntax highlighting!',
+        background_color: '#225ca3',
+        theme: '#225ca3',
         start_url: './',
         publicPath: './',
         icons: [

@@ -24,6 +24,7 @@ if (typeof editor === 'undefined') {
 }
 
 // Check if service workers are supported
+// The Window.navigator read-only property returns a reference to the Navigator object, which has methods and properties about the application running the script.
 if ('serviceWorker' in navigator) {
   // register workbox service worker
   const workboxSW = new Workbox('/src-sw.js');
