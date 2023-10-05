@@ -36,13 +36,13 @@ export const putDb = async (content) => {
 
 // Add logic for a method that gets all the content from the database
 export const getDb = async () => {
-  console.log('GET from the db');
+  console.log('GET data from the db');
 
   // Create a connection to the database database and version we want to use.
-  const contactDb = await openDB('jate', 1);
+  const jateDb = await openDB('jate', 1);
 
   // Create a new transaction and specify the database and data privileges.
-  const tx = contactDb.transaction('jate', 'readonly');
+  const tx = jateDb.transaction('jate', 'readonly');
 
   // Open up the desired object store.
   const store = tx.objectStore('jate');

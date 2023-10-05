@@ -8,7 +8,7 @@ window.addEventListener('beforeinstallprompt', (event) => {
   // Store the triggered events
   window.deferredPrompt = event;
   
-  // Remove the hidden class from the button
+  // Remove the hidden class from the button when conditions are met that allow an application to be installed as a PWA
   butInstall.classList.toggle('hidden', false);
 });
 
